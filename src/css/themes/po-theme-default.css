@@ -10,6 +10,7 @@
  * Global......................variáveis globais e configurações.
  *
  * COMPONENTS
+ * Avatar......................variáveis do Accordion.
  * Avatar......................variáveis do Avatar.
  * Button......................variáveis do Button.
  * Badge.......................variáveis do Badge.
@@ -224,6 +225,25 @@
   COMPONENTS
 \*------------------------------------*/
 :root {
+/*------------------------------------*\
+  ACCORDION
+\*------------------------------------*/
+
+/**
+ * Accordion Item
+ */
+  --color-accordion-item-border-color: var(--color-neutral-light-90);
+/**
+ * Accordion Item Header
+ */
+  --color-accordion-header-button-background-color: var(--color-white);
+  --color-accordion-header-color-primary: var(--color-primary);
+  --color-accordion-header-color-hover: #733B8E;
+/**
+ * Accordion Item Body
+ */
+  --color-accordion-item-body-color: var(--color-neutral);
+
 /*------------------------------------*\
   AVATAR
 \*------------------------------------*/

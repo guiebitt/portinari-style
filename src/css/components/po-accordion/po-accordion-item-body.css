@@ -1,0 +1,11 @@
+:root {
+  --font-accordion-item-body-font {
+    @apply --font-text-large;
+  }
+}
+
+.po-accordion-item-body {
+  @apply --font-accordion-item-body-font;
+  color: var(--color-accordion-item-body-color);
+  padding: 0 16px 8px;
+}

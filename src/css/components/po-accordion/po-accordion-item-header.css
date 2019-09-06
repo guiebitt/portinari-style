@@ -1,0 +1,42 @@
+:root {
+
+  --font-accordion-header-font-button {
+    @apply --font-text-large-bold;
+  }
+
+  --font-accordion-header-font-size-icon: 24px;
+}
+
+.po-accordion-item-header {
+  height: 40px;
+  margin: 0;
+  padding: 8px 8px 8px 16px;
+  position: relative;
+}
+
+.po-accordion-item-header-button,
+.po-accordion-item-header-icon {
+  color: var(--color-accordion-header-color-primary);
+}
+
+.po-accordion-item-header-button:hover,
+.po-accordion-item-header-icon:hover {
+  color: var(--color-accordion-header-color-hover);
+}
+
+.po-accordion-item-header-button {
+  @apply --font-accordion-header-font-button;
+  background-color: var(--color-accordion-header-button-background-color);
+  border: none;
+  height: 100%;
+  outline: 0;
+  padding-right: 24px;
+  text-align: left;
+  width: 100%;
+}
+
+.po-accordion-item-header-icon {
+  font-size: var(--font-accordion-header-font-size-icon);
+  position: absolute;
+  right: 8px;
+}
