@@ -17,5 +17,4 @@ This is a Portinari Theme with Green tonalities to [Portinari UI](https://github
     ```
 
 ## Sample
-![GEBittencourt Portinari Style Green](theme-green.png)
-
+![GEBittencourt Portinari Style Green](https://github.com/guiebitt/portinari-style/raw/master/docs/theme/green/theme-green.png)
