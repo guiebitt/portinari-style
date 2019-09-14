@@ -4,6 +4,17 @@ Repositório dos arquivos de estilo do PO Core.
 
 Esse repositório é usado para atualizar o CDN PO Core que deve ser utilizado como base por todos os projetos front-end da Portinari.
 
+# Temas
+
+* **Default**: padrão do [Portinari Style](https://github.com/portinariui/portinari-style):
+    ```
+    npm install @portinari/style
+    ```
+* **Green**: customizado (tons em verde) de [GEBittencourt Portinary Style](https://github.com/guiebitt/portinari-style):
+    ```
+    npm install @gebittencourt/portinari-style-green
+    ```
+
 # Processo de design
 
 Antes de desenvolver um novo componente, verifique se o protótipo tem a especificação para os seguintes status:

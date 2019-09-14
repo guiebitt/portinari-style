@@ -43,11 +43,15 @@ const copyThemePackageJson = () =>
       delete contents.devDependencies;
       delete contents.scripts;
 
-      contents.name = `@portinari/style${argv.theme ? '-' + argv.theme : ''}`;
-      contents.description = `Portinari - Theme${argv.theme ? ' ' + capitalize(argv.theme) : ''}`;
+      contents.name = `@gebittencourt/portinari-style${argv.theme ? '-' + argv.theme : ''}`;
+      contents.description = `GEBittencourt Portinari Style${argv.theme ? ' ' + capitalize(argv.theme) : ''}`;
 
       file.contents = new Buffer(JSON.stringify(contents, null, 2), 'utf-8');
     }))
+    .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
+
+const copyThemeREADME = () =>
+  src(`docs/theme/${argv.theme ? argv.theme : ''}/**`)
     .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
 
 const prepareThemeCss = () => src('./src/**/*.css').pipe(dest('./.temp'));
@@ -99,7 +103,7 @@ const buildDevThemeCss = () =>
 
 const buildTheme = series(
   cleanTemp,
-  parallel(copyThemeAssets, copyThemePackageJson, prepareThemeCss),
+  parallel(copyThemeAssets, copyThemePackageJson, copyThemeREADME, prepareThemeCss),
   buildThemeCss,
   cleanTemp
 );
