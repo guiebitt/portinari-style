@@ -25,12 +25,20 @@ Antes de desenvolver um novo componente, verifique se o protótipo tem a especif
 2. Fica observando alterações no projeto e recria o build do projeto em tempo de desenvolvimento
 `npm run watch` ou `yarn watch`
 
+    - Quando você deseja especificar um tema, é necessário adicionar
+    `-- --theme <nomedotema>`
+
+    **Exemplo**: `npm run watch -- --theme green`
+    
+    **Nome do tema**: é o sufixo relacionado ao arquivo `po-theme-<sufixo>.css`, localizado em `src/app/css/themes`;
+
 3. Inicia o servidor para testar o projeto
 `npm run dev` ou `yarn dev`
 
 Outros scripts:
 * Faz o build do projeto
 `npm run build` ou `yarn build`
+    * Também é possível informar um tema específico adicionando `-- --theme <nomedotema>`
 
 # Contribuição
 
