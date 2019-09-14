@@ -12,7 +12,7 @@
     "build": "gulp build",
     "build:app": "gulp build:app",
     "watch": "gulp watch",
-    "dev": "http-server ./app-dist -o"
+    "dev": "http-server ./app-dist -o -c-1"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",

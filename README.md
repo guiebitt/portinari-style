@@ -32,8 +32,11 @@ Antes de desenvolver um novo componente, verifique se o protótipo tem a especif
     
     **Nome do tema**: é o sufixo relacionado ao arquivo `po-theme-<sufixo>.css`, localizado em `src/app/css/themes`;
 
-3. Inicia o servidor para testar o projeto
+3. Inicia o servidor (http-server) para testar o projeto
 `npm run dev` ou `yarn dev`
+
+    - Utilizando o `npm run watch` e o `npm run dev`, a cada alteração, apenas dê o refresh na página para visualizar a mesma;
+
 
 Outros scripts:
 * Faz o build do projeto
